@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    z-index: 1;
+}
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    z-index:0;
+}
+nav ul li a{
+    font-size:30px;
+    font-weight: 600;
+    color:black;
+}
+
+#welcome-section{
+    height:100vh;
+    background: url('images/welcome-bg.png');
+
+}
+.background{
+    background: url('images/welcome-2.png');
+    height:100vh;
+    width:100%;
+}
+#projects{
+    height: 100vh;
+}
+@media screen and (max-device-width: 500px){
+
+}
