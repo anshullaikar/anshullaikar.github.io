@@ -3,27 +3,44 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    z-index: 1;
+    z-index: 0;
+
 }
 :root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    font-size:12px;
+    background-color: #047960;
 }
 
 nav{
+
+    z-index:2;
+    background-color: rgba(0,0,0,0);
+    font-family: "Finger Paint", sans-serif;
+    color: white;
+    font-size:2rem;
     position:fixed;
     top:0;
     left:0;
     width:100%;
+}
+nav ul{
+    float: right !important;
     display:flex;
-    z-index:0;
+    flex-direction: row;
+    list-style: none;
+}
+nav ul li{
+    text-align: right !important;
+    padding:1rem;
 }
 nav ul li a{
-    font-size:30px;
-    font-weight: 600;
-    color:black;
+    color:white;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 #welcome-section{
@@ -32,9 +49,16 @@ nav ul li a{
 
 }
 .background{
-    background: url('images/welcome-2.png');
-    height:100vh;
-    width:100%;
+    background-image: url('images/welcome-2.png');
+    /* Add the blur effect */
+    filter: blur(1px);
+    background-position: center right;
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+
+    background-size: cover;
 }
 #projects{
     height: 100vh;
