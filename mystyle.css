@@ -16,8 +16,7 @@
 }
 
 nav{
-
-    z-index:2;
+    z-index:9999;
     background-color: rgba(0,0,0,0);
     font-family: "Finger Paint", sans-serif;
     color: white;
@@ -26,6 +25,7 @@ nav{
     top:0;
     left:0;
     width:100%;
+    backdrop-filter: blur(2px);
 }
 nav ul{
     float: right !important;
@@ -36,6 +36,7 @@ nav ul{
 nav ul li{
     text-align: right !important;
     padding:1rem;
+    text-shadow: 2px 2px 2px #303841;
 }
 nav ul li a{
     color:white;
@@ -43,11 +44,6 @@ nav ul li a{
     background-color: transparent;
 }
 
-#welcome-section{
-    height:100vh;
-    background: url('images/welcome-bg.png');
-
-}
 .background{
     background-image: url('images/welcome-2.png');
     /* Add the blur effect */
@@ -60,6 +56,22 @@ nav ul li a{
 
     background-size: cover;
 }
+.bg-text{
+    font-size: 3rem;
+    color:white;
+    font-family: "Finger Paint", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #303841;
+}
+
 #projects{
     height: 100vh;
 }
