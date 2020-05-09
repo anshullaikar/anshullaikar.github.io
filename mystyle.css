@@ -1,9 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,600i,700,700i,900,900i&display=swap');
+
+@font-face{
+    font-family:Whitney;
+    font-weight:300;
+    src:url(https://discordapp.com/assets/16801bfdf51ed88e69bc90626a3ea436.woff)
+    format("woff");
+}
+@font-face{
+    font-family:Whitney;font-weight:400;
+    src:url(https://discordapp.com/assets/d153359b5d87601d2b9c708b7ae2db02.woff)
+    format("woff");
+}
+@font-face{
+    font-family:Whitney;font-weight:500;
+    src:url(https://discordapp.com/assets/a934ab008c7f6a2274ec441f6be0696a.woff)
+    format("woff");
+}
+@font-face{
+    font-family:Whitney;
+    font-weight:600;
+    src:url(https://discordapp.com/assets/877ef48bf9fcfee590f0ba64de101b59.woff)
+    format("woff");
+}
+@font-face{
+    font-family:Whitney;
+    font-weight:700;
+    src:url(https://discordapp.com/assets/2e004dd717cdc58b9ccb361d286ebbce.woff)
+    format("woff");
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    z-index: 0;
+    z-index: 2;
+    font-family: Vollkorn, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -20,14 +51,13 @@ html{
 nav{
     z-index:9999;
     background-color: rgba(0,0,0,0);
-    font-family: "Finger Paint", sans-serif;
     color: white;
     font-size:2rem;
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 }
 nav ul{
     float: right !important;
@@ -47,10 +77,9 @@ nav ul li a{
 }
 
 .background{
-    background-image: url('images/welcome-2.png');
+    background-image: url('https://wallpaperplay.com/walls/full/a/c/a/53281.jpg');
     /* Add the blur effect */
-    filter: blur(1px);
-    background-position: center right;
+    background-position: center center;
     /* Full height */
     height: 100%;
 
@@ -61,21 +90,34 @@ nav ul li a{
 .bg-text{
     font-size: 3rem;
     color:white;
-    font-family: "Finger Paint", sans-serif;
     font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
+    z-index: 3;
+    width: 70%;
     padding: 20px;
     text-align: center;
     text-shadow: 2px 2px 2px #303841;
+    border: 3px solid #f1f1f1;
+    max-width: 700px;
+    background-color: rgba(0,0,0, 0.2);
 }
 
 #projects{
     height: 100vh;
+    /* i have a background image ready in case i change my mind
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/549e9b77-4c90-4c7f-8d0e-772a4ba70576/daj4ocm-f915657c-797c-40ee-b7a5-23dd7750457c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTQ5ZTliNzctNGM5MC00YzdmLThkMGUtNzcyYTRiYTcwNTc2XC9kYWo0b2NtLWY5MTU2NTdjLTc5N2MtNDBlZS1iN2E1LTIzZGQ3NzUwNDU3Yy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.aV294VAdYttTmZBj5J7d6d4dn6POlMd8OJqJyhddXoA");
+    */
+    background-color: white;
+    background-position: center right;
+    background-size: cover;
+}
+#project-header{
+    font-size:3rem;
+    color:black;
+    border-bottom: 0.2rem solid black;
 }
 @media screen and (max-device-width: 500px){
 
