@@ -44,6 +44,7 @@ html{
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --tile-width: 300px;
     font-size:12px;
     background-color: #047960;
 }
@@ -57,7 +58,6 @@ nav{
     top:0;
     left:0;
     width:100%;
-    backdrop-filter: blur(3px);
 }
 nav ul{
     float: right !important;
@@ -110,14 +110,42 @@ nav ul li a{
     /* i have a background image ready in case i change my mind
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/549e9b77-4c90-4c7f-8d0e-772a4ba70576/daj4ocm-f915657c-797c-40ee-b7a5-23dd7750457c.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTQ5ZTliNzctNGM5MC00YzdmLThkMGUtNzcyYTRiYTcwNTc2XC9kYWo0b2NtLWY5MTU2NTdjLTc5N2MtNDBlZS1iN2E1LTIzZGQ3NzUwNDU3Yy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.aV294VAdYttTmZBj5J7d6d4dn6POlMd8OJqJyhddXoA");
     */
-    background-color: white;
+    background-color: #FFF;
     background-position: center right;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+
+
 }
 #project-header{
     font-size:3rem;
-    color:black;
-    border-bottom: 0.2rem solid black;
+    color:#2F3D4F;
+    text-align: center;
+    width:60%;
+    margin:2rem auto;
+    border-bottom: 0.2rem solid #2F3D4F;
+    padding:10px;
+}
+.project-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.project-tile{
+    width:var(--tile-width);
+    height:calc(1.2*var(--tile-width));
+    margin:2rem;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+.project-tile img{
+    width:var(--tile-width);
+    height: var(--tile-width);
+    max-width:800px;
+    max-height: 800px;
+    margin: auto;
 }
 @media screen and (max-device-width: 500px){
 
