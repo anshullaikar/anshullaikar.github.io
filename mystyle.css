@@ -126,16 +126,19 @@ nav ul li a{
     margin:2rem auto;
     border-bottom: 0.2rem solid #2F3D4F;
     padding:10px;
+    max-width: 450px;
 }
 .project-grid{
-    display: flex;
-    flex-wrap: wrap;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: auto;
 }
 .project-tile{
     width:var(--tile-width);
     height:calc(1.2*var(--tile-width));
-    margin:2rem;
+    margin:2rem auto;
     position:relative;
     display: flex;
     flex-direction: column;
@@ -146,6 +149,9 @@ nav ul li a{
     max-width:800px;
     max-height: 800px;
     margin: auto;
+}
+.project-tile h2{
+    text-align: center;
 }
 @media screen and (max-device-width: 500px){
 
