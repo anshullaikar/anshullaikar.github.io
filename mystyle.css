@@ -127,6 +127,16 @@ nav ul li a{
     padding:10px;
     max-width: 450px;
 }
+#contact-header{
+    font-size:3rem;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin:2rem auto;
+    border-bottom: 0.2rem solid white;
+    padding:10px;
+    max-width: 450px;
+}
 .project-grid{
     width:100%;
     display: grid;
@@ -156,6 +166,24 @@ nav ul li a{
 h2 a{
     color: #2F3D4F;
     text-decoration: none;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+#contact ul li{
+    display: inline-block;
+    padding:2rem;
+}
+#contact a{
+    margin:auto;
+    color:white;
+    padding:2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 @media screen and (max-device-width: 500px){
 
