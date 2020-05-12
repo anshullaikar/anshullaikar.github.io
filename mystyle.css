@@ -29,6 +29,24 @@
     format("woff");
 }
 
+@media screen and (max-width: 600px) {
+    .project-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80% !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+        margin: auto !important;
+    }
+    #contact ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        float: unset !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -54,13 +72,15 @@ nav{
     background-color: rgba(0,0,0,0);
     color: white;
     font-size:2rem;
-    position:fixed;
+    position:absolute;
     top:0;
     left:0;
     width:100%;
 }
 nav ul{
-    float: right !important;
+    float: right;
+    align-items: end;
+
     display:flex;
     flex-direction: row;
     list-style: none;
@@ -114,7 +134,8 @@ nav ul li a{
     background-size: cover;
     display:flex;
     flex-direction: column;
-
+    justify-items: center;
+    align-items: center;
 
 }
 #project-header{
@@ -143,6 +164,7 @@ nav ul li a{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: auto;
+    grid-gap: 2rem;
 }
 .project-tile{
     width:var(--tile-width);
@@ -178,6 +200,10 @@ h2 a{
     display: inline-block;
     padding:2rem;
 }
+#contact ul{
+    display: flex;
+    justify-items: center;
+}
 #contact a{
     margin:auto;
     color:white;
@@ -185,6 +211,7 @@ h2 a{
     text-decoration: none;
     font-size: 1.5rem;
 }
-@media screen and (max-device-width: 500px){
-
+#contact h3{
+    text-align: center;
+    margin:2rem;
 }
