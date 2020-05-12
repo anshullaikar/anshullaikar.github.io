@@ -28,8 +28,12 @@
     src:url(https://discordapp.com/assets/2e004dd717cdc58b9ccb361d286ebbce.woff)
     format("woff");
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px){
+    .aligner-div{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 800px) {
     .project-grid {
         width: 100%;
         display: grid;
@@ -46,7 +50,11 @@
         justify-content: center;
         align-items: center;
     }
+    .aligner-div{
+        max-width: var(--tile-width);
+    }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -214,4 +222,7 @@ h2 a{
 #contact h3{
     text-align: center;
     margin:2rem;
+}
+.aligner-div{
+    width:60%;
 }
