@@ -118,6 +118,9 @@ nav ul li a{
     align-items: center;
 
 }
+#subheader{
+    font-size: 1.5rem !important;
+}
 #project-header{
     font-size:3rem;
     color:#2F3D4F;
