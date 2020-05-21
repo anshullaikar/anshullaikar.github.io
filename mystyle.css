@@ -232,5 +232,8 @@ h2 a{
     nav ul{
         font-size: 16px;
     }
+    h2 a{
+        font-size: 12px;
+    }
 
 }
