@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11e019b2-1daa-4698-8d70-243a0cde98cc" name="Default Changelist" comment="" />
+    <list default="true" id="11e019b2-1daa-4698-8d70-243a0cde98cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +15,13 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1ba4k0uEEmlmcPob1BplV7giHiN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
@@ -52,6 +60,11 @@
       <workItem from="1589234255026" duration="5623000" />
       <workItem from="1589287725103" duration="5835000" />
       <workItem from="1590100476445" duration="1763000" />
+      <workItem from="1592312827947" duration="5000" />
+      <workItem from="1595244193313" duration="465000" />
+      <workItem from="1597653791389" duration="74000" />
+      <workItem from="1597763277684" duration="975000" />
+      <workItem from="1597915077831" duration="29000" />
     </task>
     <servers />
   </component>
